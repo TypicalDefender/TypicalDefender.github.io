@@ -28,38 +28,58 @@
         <p id="introduction">
                 Introduction
         </p>
-        <h3>Get started with zeva, a modern and minimalist framework for building responsive and modern Frontends. Below are different ways of using zeva on your project</h3>
+        <h3>This section dives deep into practical tips for specific topics of algorithms and data structures which appear frequently in coding questions. Many algorithm questions involve techniques that can be applied to questions of similar nature. The more techniques you have in your arsenal, the higher the chances of passing the interview. They may lead you to discover corner cases you might have missed out or even lead you towards the optimal approach!</h3>
+          <h3>  For each topic, study links are recommended to help you master the topic. There is a list of recommended common questions to practice which in my opinion is highly valuable for mastering the core concepts for the topic.</h3>
         <div class="box">
-            <h2>Download the zip file</h2>
-            <a href="https://github.com/zeva-ui/zeva/archive/v1.0.0.zip">
-                <button class="button h-border-pill h-weight-bold">Download v1.0.0</button>
+            
             </a>
-            <h2>or clone it</h2>
-            <pre class="prettyprint lang-html">git clone https://github.com/zeva-ui/zeva.git
-            </pre>
-        </div>
-        <div class="box">
-            <h2>CDN</h2>
-            <h3>CSS</h3>
-            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.css
-            </pre>
-            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.min.css
-            </pre>
-        </div>
-        <div class="box">
-            <h2>NPM</h2>
-            <pre class="prettyprint lang-plain">npm i zeva (coming soon)
-            </pre>
-        </div>
-        <div class="box">
-            <h2>Yarn</h2>
-            <pre class="prettyprint lang-plain">yarn add zeva (coming soon)
-            </pre>
-        </div>
-        <div class="box">
-            <h2>Bower</h2>
-            <pre class="prettyprint lang-plain">bower install zeva (coming soon)
-            </pre>
+            <h2>General tips:</h2>
+            <h3>Clarify any assumptions you made subconsciously. Many questions are under-specified on purpose.</h3>
+            <h3>Always validate input first. Check for invalid/empty/negative/different type input. Never assume you are given the valid parameters. Alternatively, clarify with the interviewer whether you can assume valid input (usually yes), which can save you time from writing code that does input validation.</h3>
+            <h3>Are there any time/space complexity requirements/constraints?</h3>
+            <h3>Check for off-by-one errors.</h3>
+            <h3>In languages where there are no automatic type coercion, check that concatenation of values are of the same type: <code>int</code>/<code>str</code>/<code>list.</code></h3>
+            <h3>After finishing your code, use a few example inputs to test your solution.</h3>
+            <h3>Is the algorithm meant to be run multiple times, for example in a web server? If yes, the input is likely to be preprocess-able to improve the efficiency in each call.</h3>
+            <h3>
+
+                Use a mix of functional and imperative programming paradigms:
+                <ul>
+                    <li>Write pure functions as much as possible.</li>
+                    <li>Pure functions are easier to reason about and can help to reduce bugs in your implementation.</li>
+                    <li>Avoid mutating the parameters passed into your function especially if they are passed by reference unless you are sure of what you are doing.
+                    </li>
+                    <li>However, functional programming is usually expensive in terms of space complexity because of non-mutation and the repeated allocation of new objects. On the other hand, imperative code is faster because you operate on existing objects. Hence you will need to achieve a balance between accuracy vs efficiency, by using the right amount of functional and imperative code where appropriate.</li>
+                    <li>Avoid relying on and mutating global variables. Global variables introduce state.</li>
+                    <li>If you have to rely on global variables, make sure that you do not mutate it by accident.</li>
+                </ul>
+            </h3>
+            <h3>Generally, to improve the speed of a program, we can either: (1) choose a more appropriate data structure/algorithm; or (2) use more memory. The latter demonstrates a classic space vs. time tradeoff, but it is not necessarily the case that you can only achieve better speed at the expense of space. Also, note that there is often a theoretical limit to how fast your program can run (in terms of time complexity). For instance, a question that requires you to find the smallest/largest element in an unsorted array cannot run faster than O(N).</h3>
+        <h3>Data structures are your weapons. Choosing the right weapon for the right battle is the key to victory. Be very familiar about the strengths of each data structure and the time complexities for its various operations.</h3>
+        <h3>Data structures can be augmented to achieve efficient time complexities across different operations. For example, a hash map can be used together with a doubly-linked list to achieve O(1) time complexity for both the <code>get</code> and <code>put</code> operation in an LRU cache.</h3>
+        <h3>Hashmaps are probably the most commonly used data structure for algorithm questions. If you are stuck on a question, your last resort can be to enumerate through the common possible data structures (thankfully there aren't that many of them) and consider whether each of them can be applied to the problem. This has worked for me sometimes.</h3>
+        <h3>If you are cutting corners in your code, state that out loud to your interviewer and say what you would do in a non-interview setting (no time constraints). E.g., I would write a regex to parse this string rather than using <code>split()</code> which may not cover all cases.</h3>
+        <h2>References:</h2>
+        <h3>
+            <ul>
+                <li>
+                <a href="http://blog.triplebyte.com/how-to-pass-a-programming-interview" target="_blank" rel="noopener noreferrer">http://blog.triplebyte.com/how-to-pass-a-programming-interview</a>
+                </li>
+                <li>
+                <a href="https://quip.com/q41AA3OmoZbC" target="_blank" rel="noopener noreferrer">https://quip.com/q41AA3OmoZbC</a>
+                </li>
+                <li>
+
+                
+                <a href="http://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/" target="_blank" rel="noopener noreferrer">http://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/</a>
+            </li>
+            <li>
+
+            
+                <a href="https://medium.com/basecs" target="_blank" rel="noopener noreferrer">https://medium.com/basecs</a>
+            </li>
+            </ul>
+        </h3>    
         </div>
         <p id="content">
             Content
