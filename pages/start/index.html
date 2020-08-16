@@ -82,20 +82,87 @@
         </h3>    
         </div>
         <p id="content">
-            Content
+            Arrays
         </p>
-        <h3>Within the downloaded file you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations</h3>
-            <pre class="prettyprint lang-plain">
-                zeva/
-                └── dist/
-                    └── css/
-                        ├── zeva.css
-                        ├── zeva.css.map
-                        ├── zeva.min.css
-                        └── zeva.min.css.map
-                        └── js/
-                        └── index.min.js
-            </pre>
+        <h2>Notes:<h2>
+            <!--  
+<pre class="prettyprint lang-html">
+        &lt;a>link&lt;/a>
+        &lt;i>italic&lt;/i>
+        &lt;b>bold&lt;/b>
+        &lt;u>underline&lt;/u>
+        &lt;strike>strike&lt;/strike>
+        &lt;small>small&lt;/small>
+        &lt;sup>superscript&lt;/sup>
+        &lt;sub>subscript&lt;/sub>
+
+        &lt;h1>This is a heading&lt;/h1>
+        &lt;h2>This is a heading&lt;/h2>
+        &lt;h3>This is a heading&lt;/h3>
+        &lt;h4>This is a heading&lt;/h4>
+        &lt;h5>This is a heading&lt;/h5>
+        &lt;h6>This is a heading&lt;/h6>
+</pre>
+-->
+<h3>Is the array sorted or partially sorted? If it is, some form of binary search should be possible. This also usually means that the interviewer is looking for a solution that is faster than <code>O(n)</code>.</h3>
+<h3>Can you sort the array? Sometimes sorting the array first may significantly simplify the problem. Make sure that the order of array elements do not need to be preserved before attempting a sort.</h3>
+<h3>For questions where summation or multiplication of a subarray is involved, pre-computation using hashing or a prefix/suffix sum/product might be useful.</h3>
+<h3>If you are given a sequence and the interviewer asks for <code>O(1)</code> space, it might be possible to use the array itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, negate the value at that index (minus one) to indicate presence of that number.</h3>
+<h2>Arrays are sequences:</h2>
+<h3>Are there duplicate values in the array, would it affect the answer?</h3>
+<h3>When using an index to iterate through array elements, be careful not to go out of bounds.</h3>
+<h3>Be mindful about slicing or concatenating arrays in your code. Typically, slicing and concatenating arrays require O(n) time. Use start and end indices to demarcate a subarray/range where possible.</h3>
+<h3>Sometimes you can traverse the array from the right rather than from the left.
+
+</h3>
+<h3>Master the sliding window technique that applies to many subarray problems.</h3>
+<h3>When you are given two arrays to process, it is common to have one index per array (pointer) to traverse/compare the both of them. For example, we use the same approach to merge two sorted arrays.</h3>
+<h2>Corner Cases:</h2>
+<h3>
+    <ul>
+        <li>Empty sequence</li>
+        
+        <li>Sequence with 1 or 2 elements</li>
+        
+        <li>Sequence with repeated elements</li>
+    
+        
+    </ul>
+</h3>
+<h2>Recommended Leetcode Questions:</h2>
+<h3>
+    <ul>
+        <li>
+            <a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener noreferrer">Two Sum</a>
+        </li>
+        <li>
+            <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener noreferrer">Best Time to Buy and Sell Stock</a>
+        </li>
+        <li>
+
+            <a href="https://leetcode.com/problems/contains-duplicate/" target="_blank" rel="noopener noreferrer">Contains Duplicate</a>
+    </li>
+    <li>
+
+        <a href="https://leetcode.com/problems/product-of-array-except-self/" target="_blank" rel="noopener noreferrer">Product of Array Except Self</a>
+    </li>
+    <li>
+        <a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener noreferrer">Maximum Subarray</a>
+    </li>
+    <li>
+        <a href="https://leetcode.com/problems/maximum-product-subarray/" target="_blank" rel="noopener noreferrer">Maximum Product Subarray</a>
+    </li>
+    <li> 
+        <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" target="_blank" rel="noopener noreferrer">Find Minimum in Rotated Sorted Array</a>
+    </li>
+    <li>
+        <a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener noreferrer">Search in Rotated Sorted Array</a>
+    </li>
+    <li>
+        <a href="https://leetcode.com/problems/3sum/" target="_blank" rel="noopener noreferrer">3Sum</a>
+    </li>
+    </ul>
+           
             <p id="Theming">
                     Theming
                 </p>
